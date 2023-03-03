@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap");
+@import "./common/variables.scss";
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+}
+
+body {
+   color: $fontColor;
+
+   background: {
+      color: $bgColor;
+   }
+
+   font: {
+      family: "Montserrat Alternates";
+   }
+}
+
+.form-control {
+   background: $bgTransparent;
+   color: $fontColor;
+
+   &:hover {
+      background: $bgTransparent;
+      color: inherit;
+   }
+   &:focus {
+      background: $bgTransparent;
+      color: inherit;
+   }
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+   display: none;
+   appearance: none;
+}
+
+::-webkit-scrollbar {
+   width: 10px;
+}
+
+::-webkit-scrollbar-track {
+   background-color: $lightBgColor;
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: $secondFontColor;
+   border-radius: 3.125rem;
+}
+
+.brdr {
+   border: $borderHeight solid $borderColor;
+}

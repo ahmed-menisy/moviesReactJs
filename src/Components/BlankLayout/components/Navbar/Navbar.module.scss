@@ -1,0 +1,21 @@
+@import "../../../../common/_variables";
+.navbar {
+   background-color: $bgColor;
+
+   a {
+      color: #fff !important;
+      transition: color 0.5s;
+
+      &:hover {
+         @extend .commonColor;
+      }
+   }
+
+   .linkActive {
+      @extend .commonColor;
+   }
+}
+
+.commonColor {
+   color: #09c !important;
+}

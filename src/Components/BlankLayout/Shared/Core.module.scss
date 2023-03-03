@@ -1,0 +1,9 @@
+.card {
+   transition: 0.5s transform, filter 1s;
+   cursor: pointer;
+   filter: grayscale(1);
+   &:hover {
+      transform: scale(1.05);
+      filter: grayscale(0);
+   }
+}
